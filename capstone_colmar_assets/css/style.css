@@ -14,7 +14,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 2.25rem;
+}
+
+h2#small {
+    font-size: 1.25rem;
 }
 
 .uppercase {
@@ -30,7 +34,12 @@ h2 {
 }
 
 .gray-background {
-    background-color: lightgray;
+    background-color: rgb(235, 232, 232);
+}
+
+.blue {
+    color: rgb(145, 223, 253);
+    font-weight: bold;
 }
 
 
@@ -86,26 +95,25 @@ button {
 .banner {
     display: flex;
     flex-direction: row;
-    padding: 2rem 1.5rem;
-    background-color: lightgray;
 }
 
-.banner img {
+.banner__pic img {
     width: 100%;
     height: auto;
 }
 
 .banner__pic {
     width: 60%;
+    padding: 2rem 2rem 2rem 1.5rem;
 }
 
 .banner__info {
     display: flex;
     flex-direction: column;
     width: 40%;
-    padding-left: 2rem;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 1rem;
 }
 
 
@@ -120,7 +128,7 @@ button {
     width: 60%;
     display: flex;
     flex-direction: column;
-    margin: 2rem 1.5rem;
+    padding: 2rem 1.5rem 4rem 1.5rem;
 }
 
 .school-info__right__pic {
@@ -140,8 +148,8 @@ button {
 
 .school-info__articles {
     width: 40%;
-    border-left: 1px solid lightgray;
-    margin: 2rem 1.5rem 2rem 0;
+    border-left: 1px solid rgb(235, 232, 232);
+    padding: 2rem 1.5rem 4rem 0;
 }
 
 .article {
@@ -157,19 +165,19 @@ button {
 }
 
 #fancy-bottom {
-    border-bottom: 5px solid lightgray;
+    border-bottom: 5px solid rgb(235, 232, 232);
 }
 
 
 /* Learning Section */
 
 .learning {
-    padding: 2rem 4.5rem;
+    padding: 4rem 8rem;
 }
 
 .learning h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-top: 0;
 }
 
@@ -201,7 +209,7 @@ button {
 /* Thesis Exhibit Section */
 
 .thesis-exhibit {
-    padding-top: 2rem;
+    margin-top: 4rem;
 }
 
 .thesis-exhibit__content {
@@ -217,7 +225,7 @@ button {
 
 .thesis-exhibit__content__right {
     width: 60%;
-    margin: 2rem 1.5rem;
+    margin: 2rem 1rem 4rem 1.5rem;
 }
 
 video {
@@ -229,7 +237,7 @@ video {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 2rem 0.5rem 2rem 0rem;
+    margin: 2rem 0.5rem 4rem 0rem;
 }
 
 
@@ -240,7 +248,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid lightgray;
-    padding: 1rem 1.5rem 4rem 1.5rem;
+    padding: 0.5rem 1.5rem 4rem 1.5rem;
 }
 
 .left-side p {
