@@ -42,6 +42,15 @@ h2#small {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 750px) {
+    h1 {
+        margin: 2rem 1rem;
+    }
+    h2#small {
+        margin-bottom: 1.5rem;
+    }
+}
+
 
 /* Header Sytles */
 
@@ -84,6 +93,34 @@ button {
     padding: 0.5rem 6.7rem;
     font-size: 1rem;
     margin-top: 1.245rem;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    #nav-mobile {
+        display: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        height: 64px;
+    }
+    nav {
+        display: none;
+    }
+    .right-side-flex {
+        display: none;
+    }
+    button {
+        margin-top: 0;
+    }
+    li {
+        padding: 0;
+    }
 }
 
 
@@ -204,6 +241,28 @@ button {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .school-info__right {
+        display: none;
+    }
+    .article {
+        flex-direction: column;
+        padding: 0;
+    }
+    .article img {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        padding-top: 1rem;
+    }
+    .article {
+        background-color: white;
+    }
+    .school-info__articles {
+        padding-bottom: 2rem;
+    }
+}
+
 
 /* Learning Section */
 
@@ -256,6 +315,39 @@ button {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .learning {
+        background-color: white;
+        padding: 0 1rem;
+    }
+    .learning h2 {
+        padding: 2rem 0 1rem 0;
+        margin: 0;
+    }
+    .grid-item {
+        background-color: lightgray;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .grid-item h4,
+    .grid-item p,
+    .grid-item img {
+        display: none;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 0;
+    }
+    .grid-item h3 {
+        margin: 1rem 0 1rem 1rem;
+    }
+    .grid-item__content {
+        padding: 0;
+    }
+}
+
 
 /* Thesis Exhibit Section */
 
@@ -291,6 +383,51 @@ video {
     margin: 2rem 0.5rem 4rem 0rem;
 }
 
+@media only screen and (max-width: 1285px) {
+    .thesis-exhibit__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thesis-exhibit__articles {
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .thesis-exhibit__content__right {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .thesis-exhibit h2 {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+    .thesis-exhibit {
+        padding: 0;
+        margin: 0;
+    }
+    .thesis-exhibit__articles {
+        display: none;
+    }
+    .thesis-exhibit__content__right {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+article {
+    display: none;
+}
+
+video {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
 
 /* Footer Styles */
 
@@ -307,16 +444,11 @@ footer {
     padding-left: 0.5rem;
 }
 
-@media only screen and (max-width: 1285px) {
-    .thesis-exhibit__content {
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 750px) {
+    footer {
+        padding: 1rem 1.5rem;
     }
-    .thesis-exhibit__articles {
-        width: 60%;
-        margin: 1rem auto;
-    }
-    .thesis-exhibit__content__right {
-        margin: 0;
+    .left-side p {
+        display: none;
     }
 }
