@@ -116,6 +116,24 @@ button {
     margin-left: 1rem;
 }
 
+@media only screen and (max-width: 950px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner__info {
+        width: 100%;
+        padding-bottom: 2rem;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .banner__pic {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 
 /* School Information Section */
 
@@ -168,6 +186,24 @@ button {
     border-bottom: 5px solid rgb(235, 232, 232);
 }
 
+@media only screen and (max-width: 1285px) {
+    .school-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .school-info__right {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+    .school-info__articles {
+        border-left: none;
+        padding: 1rem;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
 
 /* Learning Section */
 
@@ -203,6 +239,21 @@ button {
 .grid-item img {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 1285px) {
+    .learning {
+        padding-bottom: 1rem;
+    }
+    .grid-item__content {
+        padding: 0.5rem 1rem 0.75rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .grid-container {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
 }
 
 
@@ -254,4 +305,18 @@ footer {
 .left-side p {
     display: inline-block;
     padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1285px) {
+    .thesis-exhibit__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thesis-exhibit__articles {
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .thesis-exhibit__content__right {
+        margin: 0;
+    }
 }
